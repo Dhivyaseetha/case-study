@@ -8,9 +8,8 @@
 
   	Authentication begins when a user tries to access information. 
 	First, the user must prove his access rights and identity.
-	When logging into a computer, users commonly enter usernames and passwords for authentication purposes.This login combination, which must be assigned to each user, authenticates 
-access.
-        A better form of authentication, biometrics, depends on the user’s presence and biological makeup (i.e.,retina or fingerprints). This technology makes it more difficult for hackers to break into computer systems.
+	When logging into a computer, users commonly enter usernames and passwords for authentication purposes.This login combination, which must be assigned to each user, authenticate access.
+        A better form of authentication, biometrics, depends on the user’s presence and biological makeup (i.e.,retina or fingerprints). This technology makes it more difficult for hacikers to break into computer systems.
 
 
   **Authorization :**
