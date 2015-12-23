@@ -71,9 +71,21 @@
 	  Once we have authenticated with our information and we have our token, we are able to do many things with this token.
 
 
+###***IMPLEMENTATION : *
 
+       For each and every applications there is "Token" to access the access the data and user-information.
+       For example in gmail Application,to get TOKEN we have to call the GoogleAuthUtil() method.
+           token = GoogleAuthUtil.getToken(MainActivity.this, Plus.AccountApi.getAccountName(mGoogleApiClient), scope);
+      
+       To fetch the data from Google API
 
+          *AccessToken is shortlived. It expires in shor duration.*
+	  *In OAuth insted of using AccessToken it that we can use "RefreshTokens"*   
 
+            GoogleCredential credential = new GoogleCredential().setAccessToken(token);
+	 
+	    
+         
 
 
 
