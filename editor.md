@@ -13,9 +13,8 @@
      In computer programming, Eclipse is an integrated development environment (IDE).
      It contains a base workspace and an extensible plug-in system for customizing the environment. 
      Eclipse is written mostly in Java and its primary use is for developing Java applications, but it may also be used to develop applications in other programming languages through the use 
- of plugins, including: Ada, ABAP, C, C++, COBOL, Fortran, Haskell, JavaScript, Lasso, Lua, NATURAL, Perl, PHP, Prolog, Python, R, Ruby.
+of plugins, including: Ada, ABAP, C, C++, COBOL, Fortran, Haskell, JavaScript, Lasso, Lua, NATURAL, Perl, PHP, Prolog, Python, R, Ruby.
      Android Development Tools (ADT) is a plugin for the Eclipse IDE that is designed to give you a powerful, integrated environment in which to build Android applications.
-
      Eclipse is a Java-based open source platform that allows a software developer to create a customized development environment (IDE) from plug-in components built by Eclipse members. 
      Eclipse is managed and directed by the  Eclipse.org Consortium.
      The original goal of Eclipse was to create and foster an open source IDE community that would complement the community that surrounds Apache. 
@@ -52,14 +51,13 @@
 #####**Advantages of using eclipse : **
 
      A major advantage to an open source development platform is that it allows an IT department to mix and match development tools rather than being committed to a single vendor's suite of 
-  development products.
+development products.
 
      The biggest advantages in eclipse are the following : 
 
      Code Completion : Instead of digging through documentation we should be able to tab your way through methods and save yourself a lot of writing
 
-         Refactoring : Global Find and Replace is no replacement for good refactoring support, that starts with renaming functions, variables, classes, ... and ends with some of the 
-functionality that we can find in current Java IDE.
+         Refactoring : Global Find and Replace is no replacement for good refactoring support, that starts with renaming functions, variables, classes, ... and ends with some of the functionality that we can find in current Java IDE.
 
      Syntax Checking : It helps to write the correct code while we write.
 
