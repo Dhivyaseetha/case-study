@@ -1,5 +1,5 @@
 
-#**Restful Design Pattern : **
+#Restful Design Pattern : 
     
 #####**Restful Design pattern :**
    
@@ -46,7 +46,7 @@
   With REST the onus is on you to perform the preprocessing work (authentication/authorization/etc) while with SOAP much of that can be accomplished with a pluggable processing chain.
 
 
-#####**Solution : **
+#####Solution : 
 
 #####**Design pattern to handle REST Methods :**
    
@@ -100,7 +100,7 @@
        * NEW    -  a new row retrieve by a GET request
       
 
-   **Benefits are: **
+######Benefits are: 
 
       Saved bandwidth.
       Maximized battery life.
@@ -108,7 +108,7 @@
       Data is persisted even if the app process is killed due to device memory overload.
 
 
- ** Use the ContentProvider API and Sync Adapter : **
+#####Use the ContentProvider API and Sync Adapter : 
 
     The sync adapter framework queues sync requests if there are other sync operations queued or in-progress. 
     A sync operation will also be queued if the device is busy.
@@ -123,7 +123,7 @@
      *It minimize the network storage.
 
 
-#####** Implementation :**
+#####Implementation :
 
   GET statuses/retweet-of-me
 
@@ -135,16 +135,16 @@
 
      //get preferences for user twitter details 
       
-      tweetPrefs = getSharedPreferences("TwitNicePrefs", 0); 
+        tweetPrefs = getSharedPreferences("TwitNicePrefs", 0); 
 	             
     //get user token and secret for authentication 
       
-      String userToken = tweetPrefs.getString("user_token", null); 
-      String userSecret = tweetPrefs.getString("user_secret", null); 
+        String userToken = tweetPrefs.getString("user_token", null); 
+        String userSecret = tweetPrefs.getString("user_secret", null); 
 			       
     //create a new twitter configuration usign user details 
 
-    Configuration twitConf = new ConfigurationBuilder() 
+        Configuration twitConf = new ConfigurationBuilder() 
 			         .setOAuthConsumerKey(TWIT_KEY) 
 				 .setOAuthConsumerSecret(TWIT_SECRET) 
 				 .setOAuthAccessToken(userToken) 
@@ -154,11 +154,11 @@
 
     //create a twitter instance 
 
-     tweetTwitter = new TwitterFactory(twitConf).getInstance();
+        tweetTwitter = new TwitterFactory(twitConf).getInstance();
      
     //get any data passed to this intent for reply
-
-     Bundle extras = getIntent().getExtras();
+ 
+        Bundle extras = getIntent().getExtras();
 
      If the tweet is an ordinary update rather than a reply, there will be no extras. 
      If there are extras, we know the tweet is a reply:
@@ -167,11 +167,11 @@
      { 
        //get the ID of the tweet we are replying to 
  
-        tweetID = extras.getLong("tweetID"); 
+            tweetID = extras.getLong("tweetID"); 
  
        //get the user screen name for the tweet we are replying to 
  	
-       tweetName = extras.getString("tweetUser"); 
+            tweetName = extras.getString("tweetUser"); 
  				   					     
    }
 
@@ -181,15 +181,15 @@
 					  
      //get a reference to the text field for tweeting 
 
-     EditText theReply = (EditText)findViewById(R.id.tweettext); 
+          EditText theReply = (EditText)findViewById(R.id.tweettext); 
 
     //start the tweet text for the reply @username 
  
-     theReply.setText("@"+tweetName+" "); 
+          theReply.setText("@"+tweetName+" "); 
 
     //set the cursor to the end of the text for entry 
 
-    theReply.setSelection(theReply.getText().length());
+          theReply.setSelection(theReply.getText().length());
 
 
 
